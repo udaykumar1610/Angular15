@@ -1,0 +1,78 @@
+
+.bg{
+    background-image: url('https://img.freepik.com/free-photo/high-angle-forklift-boxes_23-2149853117.jpg?size=626&ext=jpg&ga=GA1.1.939176840.1703666059&semt=ais');
+    background-size: cover;
+    height: 100vh;
+
+}
+
+
+.about-container {
+    background-image: url('https://img.freepik.com/free-photo/top-view-truck-boxes_23-2149853130.jpg?size=626&ext=jpg&ga=GA1.1.939176840.1703666059&semt=ais');
+    background-size: cover;
+    height: 100vh;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    line-height: 1.7;
+    color: #666;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    ul {
+      font-size: 14px;
+    }
+  }
+  

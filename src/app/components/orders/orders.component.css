@@ -1,0 +1,36 @@
+/* orders.component.css */
+
+.container {
+    padding-top: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    color: #666;
+  }
+  
+  /* For smaller devices, adjust padding and font size */
+  @media (max-width: 768px) {
+    .container {
+      padding-top: 10px;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  }
+  

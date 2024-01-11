@@ -1,0 +1,57 @@
+
+
+
+
+
+
+   <div class="container mt-5 ">
+    <div class="row justify-content-center ">
+      <div class="col-md-6 shadow-lg">
+        <h2 class="mb-4"> Login</h2>
+        <form (ngSubmit)="submitLogin()" #loginForm="ngForm" novalidate>
+         
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="user.email" required>
+            <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+              <small class="text-danger">Please enter a valid email address.</small>
+            </div>
+          </div>
+  <!-- Password field -->
+<div class="form-group">
+    <label for="password">Password</label>
+    <input 
+        type="password" 
+        class="form-control" 
+        id="password" 
+        name="password" 
+        [(ngModel)]="user.password" 
+        required 
+        minlength="6" 
+        maxlength="10" 
+     
+    >
+    <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+        <small class="text-danger">
+            Please enter a password with:
+            <ul>
+                <li>Minimum 6 characters</li>
+                <li>Maximum 10 characters</li>
+                <li>At least one letter</li>
+                <li>At least one number</li>
+                <li>At least one special character</li>
+            </ul>
+        </small>
+    </div>
+</div>
+
+  
+        <a href="/navbar">
+          <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button></a>
+         
+        
+        </form>
+      </div>
+    </div>
+  </div>
+  
