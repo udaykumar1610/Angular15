@@ -82,7 +82,7 @@
                 <td>{{ customer.state }}</td>
                 <td>{{ customer.total }}</td>
                 <td>
-                    <button class="btn btn-sm btn-success">
+                    <button class="btn btn-sm btn-warning " style="color: white;">
                     <a href="/orders"> view Orders</a>
                 </button></td>
                 <td>
@@ -97,11 +97,11 @@
     </div>
   </div>
   <!-- Add these pagination controls at the bottom of your table -->
-<!-- <div class="pagination">
+<div class="pagination">
     <button class="btn btn-secondary" (click)="prevPage()">Previous</button>
-    <span>Page {{ currentPage }} of {{ this['Math'].ceil(filteredCustomer.length / pageSize) }}</span>
+    <!-- <span>Page {{ currentPage }} of {{ this['Math'].ceil(filteredCustomer.length / pageSize) }}</span> -->
 
     <button class="btn btn-secondary" (click)="nextPage()">Next</button>
-  </div> -->
+  </div>
   
    

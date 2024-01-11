@@ -3,6 +3,7 @@
     background-image: url("https://thumbs.dreamstime.com/b/abstract-gradient-blue-light-background-retro-colors-lot-space-text-composition-art-image-website-magazine-97327659.jpg");
     background-size: cover;
     height: 100vh;
+    margin-top: 0px;
 }
 .jumbotron {
     background-color: #f9f9f9;

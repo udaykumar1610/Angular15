@@ -19,14 +19,14 @@ interface customer {
   })
   export class CustomerComponent implements OnInit {
 [x: string]: any;
-//     pageSize: number = 5; // Number of items per page
-// currentPage: number = 1; // Current page number
+    pageSize: number = 5; // Number of items per page
+currentPage: number = 1; // Current page number
 
 
-// get paginatedCustomers(): customer[] {
-//   const startIndex = (this.currentPage - 1) * this.pageSize;
-//   return this.filteredCustomer.slice(startIndex, startIndex + this.pageSize);
-// }
+get paginatedCustomers(): customer[] {
+  const startIndex = (this.currentPage - 1) * this.pageSize;
+  return this.filteredCustomer.slice(startIndex, startIndex + this.pageSize);
+}
   customers: customer[] = [
  
    
@@ -118,18 +118,18 @@ interface customer {
       this.deleteBusSuccess = false;
     }, 3000);
   }
-  // prevPage() {
-  //   if (this.currentPage > 1) {
-  //     this.currentPage--;
-  //   }
-  // }
+  prevPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
+  }
   
-  // nextPage() {
-  //   // const lastPage = Math.ceil(this.filteredCustomer.length / this.pageSize);
-  //   const lastPage = this['Math'].ceil(this.filteredCustomer.length / this.pageSize);
-  //   if (this.currentPage < lastPage) {
-  //     this.currentPage++;
-  //   }
-  // }
+  nextPage() {
+    // const lastPage = Math.ceil(this.filteredCustomer.length / this.pageSize);
+    const lastPage = this['Math'].ceil(this.filteredCustomer.length / this.pageSize);
+    if (this.currentPage < lastPage) {
+      this.currentPage++;
+    }
+  }
 }
  
